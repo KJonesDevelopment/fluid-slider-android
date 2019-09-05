@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.bmuschko.nexus'
 
 group = 'com.ramotion.fluidslider'
 version = '0.3.1'
@@ -39,10 +38,4 @@ dependencies {
 
 repositories {
     mavenCentral()
-}
-
-nexus {
-    sign = true
-    repositoryUrl = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
-    snapshotRepositoryUrl = 'https://oss.sonatype.org/content/repositories/snapshots/'
 }
